@@ -1,0 +1,61 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "nombre": "Juan Pérez",
+      "correo": "juan.perez@ejemplo.com",
+      "contraseña": "contraseñasegura",
+      "telefono": "1234567890",
+      "reservas": [
+        101,
+        102
+      ]
+    }
+  ],
+  "rooms": [
+    {
+      "id": 101,
+      "nombre": "Suite Ejecutiva",
+      "descripcion": "Habitación con cama king size, minibar, jacuzzi y vista al mar.",
+      "precio_por_noche": 150,
+      "maximo_huespedes": 2,
+      "fechas_disponibles": [
+        "2025-01-15",
+        "2025-01-16",
+        "2025-01-17"
+      ],
+      "servicios": [
+        "Internet",
+        "Minibar",
+        "Jacuzzi"
+      ],
+      "estado": "disponible"
+    },
+    {
+      "id": 102,
+      "nombre": "Habitación Doble",
+      "descripcion": "Habitación con dos camas individuales y baño privado.",
+      "precio_por_noche": 100,
+      "maximo_huespedes": 2,
+      "fechas_disponibles": [
+        "2025-01-15",
+        "2025-01-18",
+        "2025-01-19"
+      ],
+      "servicios": [
+        "Internet",
+        "Aire acondicionado"
+      ],
+      "estado": "reservada"
+    }
+  ],
+  "reservas": {
+    "id": 1,
+    "id_usuario": 1,
+    "id_habitacion": 101,
+    "fecha_entrada": "2025-01-15",
+    "fecha_salida": "2025-01-16",
+    "precio_total": 150,
+    "estado": "inactiva"
+  }
+}
