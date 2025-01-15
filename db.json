@@ -10,6 +10,16 @@
         101,
         102
       ]
+    },
+    {
+      "id": 4,
+      "nombre": "Jinder",
+      "correo": "YaMeR.perez@ejemplo.com",
+      "contraseña": "Contraseñasegura",
+      "telefono": "12345678909",
+      "reservas": [
+        101
+      ]
     }
   ],
   "rooms": [

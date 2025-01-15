@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,10 +8,97 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="alternate" href="./styles.css" type="application/atom+xml" title="Atom">
 </head>
-<body class="bg-gray-300 text-gray-800">
-    <header class="bg-blue-400 text-white text-center p-4">
-        <h1 class="text-2xl font-bold">Hotel el Rincón de Camila</h1>
+
+<body class=" text-gray-800" style="background-image: url('./imagenes/estelar-cartagena-jecEWBKS4-transformed.jpeg'); background-size: cover; background-position: center;">
+    
+    <header class=" p-4 flex flex-wrap items-center justify-between">
+        <h1 class="text-2xl font-bold text-black text-center w-full sm:w-auto sm:text-left relative left-8 rounded-2xl bg-gray-100 p-2 ">
+            Hotel el Rincón de Camila
+        </h1>
+        <div class="flex flex-wrap gap-2 mt-4 sm:mt-0 ">
+            <a href="./Disponibilidad.html" target="_blank">
+                <button class=" border-transparent rounded-2xl p-2 bg-gray-100" title="boton_disponibilidad">
+                    Disponibilidad
+                </button>
+            </a>
+            <a href="./contacto.html" target="_blank">
+                <button class=" border-transparent rounded-2xl p-2 bg-gray-100" title="boton_contacto">
+                    Contáctanos
+                </button>
+            </a>
+        </div>
     </header>
-    <div class="contenedor bg-gray-500 w-96 h-96 " id="contenedor"></div>
+
+    <div class="flex items-center justify-center min-h-screen ">
+        <div class="w-11/12 sm:w-4/5 h-[90%] bg-white border border-gray-200 rounded-lg shadow-md overflow-hidden">
+            <div class="relative overflow-hidden">
+                <div id="carousel" class="flex transition-transform duration-500">
+                    <img class="w-full h-72 object-cover flex-shrink-0" src="./imagenes/areas_hotel/entrada_hotal.jpg"
+                        alt="Imagen 1">
+                    <img class="w-full h-72 object-cover flex-shrink-0" src="./imagenes/areas_hotel/piscina_hotel.jpg"
+                        alt="Imagen 2">
+                    <img class="w-full h-72 object-cover flex-shrink-0" src="./imagenes/areas_hotel/sala_comun.jpg"
+                        alt="Imagen 3">
+                </div>
+            </div>
+
+            <div class="p-6">
+                <p class="text-lg text-gray-800 mt-2">
+                    Disfruta de una experiencia completa en nuestro hotel, donde encontrarás 30 habitaciones diseñadas
+                    para brindarte el máximo confort: 10 Deluxe Individuales, 5 Deluxe Dobles, 5 Suites, 5 Dobles
+                    Presidenciales y 5 Individuales Sencillas. <br><br>
+                    Relájate en nuestra espectacular piscina o revitalízate en el exclusivo spa. Para tu
+                    entretenimiento, contamos con una zona de juegos y un casino en el 5to piso, ideales para disfrutar
+                    al máximo de tu estancia. <br><br>
+                    Además, podrás deleitarte con un bufet abierto las 24 horas y una zona de bar, donde nuestro
+                    bartender estará listo para preparar tus bebidas favoritas.
+                </p>
+                
+                
+                <button class="bg-blue-300 border-transparent text-blue-800 rounded-2xl p-2 mt-4 " title="boton_contacto">
+                    Disponibilidad en todo momento
+                </button>
+                
+                <button class="bg-blue-300 border-transparent text-blue-800 rounded-2xl p-2 mt-4" title="boton_contacto">
+                    Jacizzi
+                </button>
+                <button class="bg-blue-300 border-transparent text-blue-800 rounded-2xl p-2 mt-4" title="boton_contacto">
+                    Bartender
+                </button>
+                <button class="bg-blue-300 border-transparent text-blue-800 rounded-2xl p-2 mt-4" title="boton_contacto">
+                    Piscina
+                </button>
+                <button class="bg-blue-300 border-transparent text-blue-800 rounded-2xl p-2 mt-4 " title="boton_contacto">
+                    Casino
+                </button>
+                <button class="bg-blue-300 border-transparent text-blue-800 rounded-2xl p-2 mt-4 " title="boton_contacto">
+                    Entre otros
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- boton whatsapp -->
+    <div class="sticky bottom-4 left-4 ">
+        <a href="https://api.whatsapp.com/send?phone=3112582493" target="_blank">
+            <button class="bg-blue-500 text-white px-6 py-3 rounded-full" title="boton a whatsapp">
+                <img src="./imagenes/whatsapp.png" title="whatsapp icono" class="w-16 h-16 max-h-full">
+            </button>
+        </a>
+    </div>
+    <!-- footer -->
+    <!-- <footer class="bg-gray-800 text-white text-center p-4 mt-6">
+        <p>Creado con 💖 y Tailwind CSS</p>
+    </footer> -->
+
+    
 </body>
+
+
+
+
+<script src="./js/carrusel.js" defer></script>
+
+
+
 </html>
