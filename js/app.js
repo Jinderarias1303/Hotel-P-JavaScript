@@ -29,11 +29,13 @@ function pintarDatos(datos){
                             <p class="text-sm text-gray-700 mt-2">
                                 Maximo de huespedes: ${dato.maximo_huespedes}
                             </p>
+                            <p class="text-sm text-black mt-2 text-2xl">
+                                Dias disponible: ${dato.fechas_disponibles}</p>
                             <p class="text-sm text-green-700 mt-2 text-3xl">
                                 $ ${dato.precio_por_noche} Noche</p>
-                            <div class="flex justify-between items-center mt-4">
+                            <div class="flex justify-center items-center mt-4">
                                 <p class="text-green-600 font-bold text-lg" id="precio_noche"></p>
-                                <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-400 " id="">
+                                <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-400 " id="Estado">
                                     <p class="text-sm text-gray-900 mt-2 text-white">
                                     ${dato.estado}
                             </p>
@@ -47,4 +49,27 @@ function pintarDatos(datos){
     });
 }
 
+
+
+async function reserva() {
+await obtenerDatos()
+const boton_reserva = document.getElementById("Estado")
+
+
+boton_reserva.addEventListener("click", () =>{
+    alert("AAAA")
+})
+
+
+
+    if (boton_reserva === Disponible) {
+        
+    }
+    
+    
+    
+
+
+}
+reserva();
 obtenerDatos();

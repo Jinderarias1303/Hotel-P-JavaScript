@@ -29,7 +29,7 @@ patchData('http://localhost:3000/rooms/101',
         ],
         "estado": "disponible"
     })
-    .then(result => console.log(result))
+    // .then(result => console.log(result))
     .catch(error => console.error(error));
 
 
