@@ -1,37 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Disponibilidad_Hotel_el_Rincon_donde_camila</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./js/app.js" defer></script>
+    <script src="./js/patch.js"></script>
 </head>
-<body >
+
+<body>
     <header class="bg-green-600 p-4 flex flex-wrap items-center justify-between">
         <h1 class="text-2xl font-bold text-white text-center w-full sm:w-auto sm:text-left">
-            <p class=" italic">Hotel el Rincón de Camila</p>
+            <span class="italic">Hotel el Rincón de Camila</span>
         </h1>
         <div class="flex flex-wrap gap-2 mt-4 sm:mt-0">
-            <a href="./index.html" >
-                <button class="bg-gray-300 hover:border-black hover:border-2 rounded-2xl p-2" title="boton_disponibilidad">
-                    <p class="hover:text-blue-800">Inicio</p>
+            <a href="./index.html">
+                <button class="bg-gray-300 hover:border-black hover:border-2 rounded-2xl p-2"
+                    title="boton_disponibilidad">
+                    <span class="hover:text-blue-800">Inicio</span>
                 </button>
             </a>
-            <a href="./contacto.html" >
+            <a href="./contacto.html">
                 <button class="bg-gray-300 hover:border-black hover:border-2 rounded-2xl p-2" title="boton_contacto">
-                    <p class="hover:text-blue-800">Contáctanos</p>
+                    <span class="hover:text-blue-800">Contáctanos</span>
                 </button>
             </a>
         </div>
     </header>
 
-    <!-- boton whatsapp -->
+    <div class="bg-green-100 text-white py-6 mt-8 ">
+                <div class=" ml-8 gap-x-16 grid grid-cols-3 grid-rows-4 gap-4" id="contenedor">
+
+                </div>
+                
+                <div class="w-full sm:w-1/3">
+                    <h3 class="text-lg font-semibold">Completa el siguiente formulario para buscar tu habitación</h3>
+                    <form class="space-y-4 bg-gray-100 p-3 rounded-lg">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700">
+                                <p>Nro de noches que se va a hospedar:</p>
+                            </label>
+                            <input id="hospeda_jenoche" type="number"
+                                class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 text-black text-center">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700">Correo Electrónico:</label>
+                            <input id="Correo_elec" type="email"
+                                class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 text-black text-center">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700">Fecha de ingreso:</label>
+                            <input id="f_ingreso" type="date"
+                                class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 text-black text-center">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700">Fecha de salida:</label>
+                            <input id="f_salida" type="date"
+                                class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 text-black text-center">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700">Selecciona el tipo de
+                                habitación:</label>
+                            <select id="tipo_habitacion"
+                                class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 text-black text-center">
+                                <option class="text-black text-center">Deluxe Individuales</option>
+                                <option class="text-black text-center">Suites</option>
+                                <option class="text-black text-center">Individuales Sencillas</option>
+                            </select>
+                        </div>
+                        <button type="submit"
+                            class="mt-3 w-full px-4 py-2 bg-blue-600 text-white rounded-md shadow-sm hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                            Enviar
+                        </button>
+                    </form>
+                </div>  -->
+            </div>
+        </div>
+    </div>
+
     <div class="sticky bottom-4 left-4 p-4">
         <a href="https://api.whatsapp.com/send?phone=3112582493" target="_blank">
-            <button class="bg-blue-500 text-white px-2 py-2 rounded-full hover:bg-blue-700 " title="boton a whatsapp">
-                <img src="./imagenes/whatsapp.png" title="whatsapp icono" class="w-16 h-16 max-h-full">
+            <button class="bg-blue-500 text-white px-2 py-2 rounded-full hover:bg-blue-700" title="boton a whatsapp">
+                <img src="./imagenes/whatsapp.png" alt="whatsapp icono" class="w-16 h-16 max-h-full">
             </button>
         </a>
     </div>
 </body>
+
+
 </html>

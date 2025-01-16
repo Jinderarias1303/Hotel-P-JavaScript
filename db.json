@@ -25,10 +25,11 @@
   "rooms": [
     {
       "id": 101,
-      "nombre": "Suite Ejecutiva",
+      "nombre": "Suite",
       "descripcion": "Habitación con cama king size, minibar, jacuzzi y vista al mar.",
       "precio_por_noche": 150,
       "maximo_huespedes": 2,
+      "imag": "./imagenes/habitaciones/swit_recidencial1.jpeg",
       "fechas_disponibles": [
         "2025-01-15",
         "2025-01-16",
@@ -43,10 +44,11 @@
     },
     {
       "id": 102,
-      "nombre": "Habitación Doble",
+      "nombre": "Deluxe Individuales",
       "descripcion": "Habitación con dos camas individuales y baño privado.",
       "precio_por_noche": 100,
       "maximo_huespedes": 2,
+      "imag": "./imagenes/habitaciones/habi.jpeg",
       "fechas_disponibles": [
         "2025-01-15",
         "2025-01-18",
@@ -57,6 +59,85 @@
         "Aire acondicionado"
       ],
       "estado": "reservada"
+    },
+    {
+      "id": 103,
+      "nombre": "Deluxe Individuales",
+      "descripcion": "Habitación estándar con dos camas dobles y baño compartido.",
+      "precio_por_noche": 80,
+      "maximo_huespedes": 4,
+      "imag": "./imagenes/habitaciones/descarga.jpeg",
+      "fechas_disponibles": [
+        "2025-01-20",
+        "2025-01-21",
+        "2025-01-22"
+      ],
+      "servicios": [
+        "Internet",
+        "Televisión"
+      ],
+      "estado": "disponible"
+    },
+    {
+      "id": 104,
+      "nombre": "individuales Sencillas",
+      "descripcion": "Habitación espaciosa con cama king, baño privado y balcón.",
+      "precio_por_noche": 150,
+      "maximo_huespedes": 2,
+      "imag": "./imagenes/habitaciones/habitacion_sensilla2.jpeg",
+      "fechas_disponibles": [
+        "2025-01-23",
+        "2025-01-24",
+        "2025-01-25"
+      ],
+      "servicios": [
+        "Internet",
+        "Televisión",
+        "Minibar",
+        "Aire acondicionado"
+      ],
+      "estado": "disponible"
+    },
+    {
+      "id": 105,
+      "nombre": "Deluxe Individuales",
+      "descripcion": "Habitación amplia con una cama king y dos camas individuales, ideal para familias.",
+      "precio_por_noche": 120,
+      "maximo_huespedes": 5,
+      "imag": "./imagenes/habitaciones/swit_recidencial1.jpeg",
+      "fechas_disponibles": [
+        "2025-01-26",
+        "2025-01-27",
+        "2025-01-28"
+      ],
+      "servicios": [
+        "Internet",
+        "Televisión",
+        "Aire acondicionado",
+        "Cafetera"
+      ],
+      "estado": "disponible"
+    },
+    {
+      "id": 106,
+      "nombre": "Suite",
+      "descripcion": "Suite de lujo con sala de estar, jacuzzi y vistas panorámicas.",
+      "precio_por_noche": 300,
+      "maximo_huespedes": 2,
+      "imag": "./imagenes/habitaciones/suite-recidencial2.jpeg",
+      "fechas_disponibles": [
+        "2025-01-29",
+        "2025-01-30",
+        "2025-01-31"
+      ],
+      "servicios": [
+        "Internet",
+        "Televisión",
+        "Minibar",
+        "Jacuzzi",
+        "Servicio a la habitación"
+      ],
+      "estado": "disponible"
     }
   ],
   "reservas": {
