@@ -31,16 +31,24 @@
       "contraseña": "9876",
       "telefono": "33333",
       "reservas": []
+    },
+    {
+      "id": "66b2",
+      "nombre": "Anderson loco",
+      "correo": "anderson@gmail.com",
+      "contraseña": "123456",
+      "telefono": "123456",
+      "reservas": []
     }
   ],
   "rooms": [
     {
       "id": "101",
       "nombre": "Suite",
-      "descripcion": "Habitación con cama king size, minibar, jacuzzi y vista al mar.",
+      "descripcion": "Habitación con cama king size, minibar, jacuzzi y vista a la montaña.",
       "precio_por_noche": 150,
       "maximo_huespedes": 2,
-      "imag": "../imagenes/habitaciones/swit_recidencial1.jpeg",
+      "imag": "../imagenes/habitaciones/suite_con_jacizzi.jpg",
       "fechas_disponibles": [
         "2025-01-15",
         "2025-01-16",
@@ -56,10 +64,10 @@
     {
       "id": "102",
       "nombre": "Deluxe Individuales",
-      "descripcion": "Habitación con dos camas individuales y baño privado.",
+      "descripcion": "Habitación con internet, aire acondicionado y baño privado.",
       "precio_por_noche": 100,
       "maximo_huespedes": 2,
-      "imag": "../imagenes/habitaciones/suite-recidencial2.jpeg",
+      "imag": "../imagenes/habitaciones/habitacion_deluxe_individual.jpg",
       "fechas_disponibles": [
         "2025-01-15",
         "2025-01-18",
@@ -74,10 +82,10 @@
     {
       "id": "103",
       "nombre": "Deluxe Individuales",
-      "descripcion": "Habitación estándar con dos camas dobles y baño compartido.",
+      "descripcion": "Habitación estándar con internet, televicion y baño privado.",
       "precio_por_noche": 80,
-      "maximo_huespedes": 4,
-      "imag": "../imagenes/habitaciones/habitacion_sensilla2.jpeg",
+      "maximo_huespedes": 1,
+      "imag": "../imagenes/habitaciones/habitacion_deluxe_individual1.jpg",
       "fechas_disponibles": [
         "2025-01-20",
         "2025-01-21",
@@ -94,8 +102,8 @@
       "nombre": "individuales Sencillas",
       "descripcion": "Habitación espaciosa con cama king, baño privado y balcón.",
       "precio_por_noche": 150,
-      "maximo_huespedes": 2,
-      "imag": "../imagenes/habitaciones/habitacion_doble2.jpeg",
+      "maximo_huespedes": 1,
+      "imag": "../imagenes/habitaciones/indivudual_sencilla.jpg",
       "fechas_disponibles": [
         "2025-01-23",
         "2025-01-24",
@@ -112,10 +120,10 @@
     {
       "id": "105",
       "nombre": "Deluxe Individuales",
-      "descripcion": "Habitación amplia con una cama king y dos camas individuales, ideal para familias.",
+      "descripcion": "Habitación amplia con una cama king ideal para pasar la noche.",
       "precio_por_noche": 120,
-      "maximo_huespedes": 5,
-      "imag": "../imagenes/habitaciones/habitacion_doble.jpeg",
+      "maximo_huespedes": 1,
+      "imag": "../imagenes/habitaciones/habitacion_deluxe_individual1.jpg",
       "fechas_disponibles": [
         "2025-01-26",
         "2025-01-27",
@@ -135,7 +143,7 @@
       "descripcion": "Suite de lujo con sala de estar, jacuzzi y vistas panorámicas.",
       "precio_por_noche": 300,
       "maximo_huespedes": 2,
-      "imag": "../imagenes/habitaciones/habi.jpeg",
+      "imag": "../imagenes/habitaciones/suite1.jpg",
       "fechas_disponibles": [
         "2025-01-29",
         "2025-01-30",
@@ -155,8 +163,8 @@
       "nombre": "individuales Sencillas",
       "descripcion": "Habitación espaciosa con cama Queen, baño privado.",
       "precio_por_noche": 150,
-      "maximo_huespedes": 2,
-      "imag": "../imagenes/habitaciones/descarga.jpeg",
+      "maximo_huespedes": 1,
+      "imag": "../imagenes/habitaciones/indivudual_sencilla2.jpg",
       "fechas_disponibles": [
         "2025-02-3",
         "2025-02-4",
@@ -168,6 +176,472 @@
         "Aire acondicionado"
       ],
       "estado": "reservada"
+    },
+    {
+      "id": "108",
+      "nombre": "individuales Sencillas",
+      "descripcion": "Habitación espaciosa con cama Queen, baño privado.",
+      "precio_por_noche": 150,
+      "maximo_huespedes": 1,
+      "imag": "../imagenes/habitaciones/indivudual_sencilla.jpg",
+      "fechas_disponibles": [
+        "2025-02-3",
+        "2025-02-4",
+        "2025-02-5"
+      ],
+      "servicios": [
+        "Internet",
+        "Televisión",
+        "Aire acondicionado"
+      ],
+      "estado": "reservada"
+    },
+    {
+      "id": "109",
+      "nombre": "Deluxe Individuales",
+      "descripcion": "Habitación de lujo con cama King, baño privado y vista panorámica.",
+      "precio_por_noche": 250,
+      "maximo_huespedes": 1,
+      "imag": "../imagenes/habitaciones/delux_cama_king.jpg",
+      "fechas_disponibles": [
+        "2025-02-6",
+        "2025-02-7",
+        "2025-02-8"
+      ],
+      "servicios": [
+        "Internet",
+        "Televisión",
+        "Aire acondicionado",
+        "Mini-bar"
+      ],
+      "estado": "disponible"
+    },
+    {
+      "id": "110",
+      "nombre": "Suite",
+      "descripcion": "Amplia suite con sala de estar, cama King, baño de lujo y jacuzzi.",
+      "precio_por_noche": 400,
+      "maximo_huespedes": 2,
+      "imag": "../imagenes/habitaciones/suite_con_jacizzi.jpg",
+      "fechas_disponibles": [
+        "2025-02-10",
+        "2025-02-11",
+        "2025-02-12"
+      ],
+      "servicios": [
+        "Internet",
+        "Televisión",
+        "Aire acondicionado",
+        "Jacuzzi",
+        "Mini-bar"
+      ],
+      "estado": "disponible"
+    },
+    {
+      "id": "111",
+      "nombre": "Deluxe Individuales",
+      "descripcion": "Habitación con cama King y decoración elegante, ideal para viajeros exigentes.",
+      "precio_por_noche": 220,
+      "maximo_huespedes": 1,
+      "imag": "../imagenes/habitaciones/delux_cama_king.jpg",
+      "fechas_disponibles": [
+        "2025-02-13",
+        "2025-02-14",
+        "2025-02-15"
+      ],
+      "servicios": [
+        "Internet",
+        "Televisión",
+        "Aire acondicionado",
+        "Mini-bar"
+      ],
+      "estado": "reservada"
+    },
+    {
+      "id": "112",
+      "nombre": "individuales Sencillas",
+      "descripcion": "Habitación acogedora con cama doble y baño privado.",
+      "precio_por_noche": 130,
+      "maximo_huespedes": 1,
+      "imag": "../imagenes/habitaciones/indivudual_sencilla2.jpg",
+      "fechas_disponibles": [
+        "2025-02-16",
+        "2025-02-17",
+        "2025-02-18"
+      ],
+      "servicios": [
+        "Internet",
+        "Televisión",
+        "Aire acondicionado"
+      ],
+      "estado": "disponible"
+    },
+    {
+      "id": "113",
+      "nombre": "Suite",
+      "descripcion": "Suite con dos camas Queen, área de trabajo y vistas al mar.",
+      "precio_por_noche": 500,
+      "maximo_huespedes": 4,
+      "imag": "../imagenes/habitaciones/suite1.jpg",
+      "fechas_disponibles": [
+        "2025-02-19",
+        "2025-02-20",
+        "2025-02-21"
+      ],
+      "servicios": [
+        "Internet",
+        "Televisión",
+        "Aire acondicionado",
+        "Jacuzzi",
+        "Piscina privada"
+      ],
+      "estado": "disponible"
+    },
+    {
+      "id": "114",
+      "nombre": "Deluxe Individuales",
+      "descripcion": "Habitación moderna con cama Queen y baño de mármol.",
+      "precio_por_noche": 280,
+      "maximo_huespedes": 1,
+      "imag": "../imagenes/habitaciones/habitacion_deluxe_individual.jpg",
+      "fechas_disponibles": [
+        "2025-02-22",
+        "2025-02-23",
+        "2025-02-24"
+      ],
+      "servicios": [
+        "Internet",
+        "Televisión",
+        "Aire acondicionado",
+        "Mini-bar"
+      ],
+      "estado": "reservada"
+    },
+    {
+      "id": "115",
+      "nombre": "Suite",
+      "descripcion": "Gran suite con salón, dos baños, y vistas espectaculares.",
+      "precio_por_noche": 550,
+      "maximo_huespedes": 5,
+      "imag": "../imagenes/habitaciones/suite1.jpg",
+      "fechas_disponibles": [
+        "2025-02-25",
+        "2025-02-26",
+        "2025-02-27"
+      ],
+      "servicios": [
+        "Internet",
+        "Televisión",
+        "Aire acondicionado",
+        "Jacuzzi",
+        "Mini-bar"
+      ],
+      "estado": "disponible"
+    },
+    {
+      "id": "116",
+      "nombre": "individuales Sencillas",
+      "descripcion": "Habitación sencilla con cama individual, ideal para un huésped.",
+      "precio_por_noche": 100,
+      "maximo_huespedes": 1,
+      "imag": "../imagenes/habitaciones/indivudual_sencilla2.jpg",
+      "fechas_disponibles": [
+        "2025-02-28",
+        "2025-03-1",
+        "2025-03-2"
+      ],
+      "servicios": [
+        "Internet",
+        "Televisión",
+        "Aire acondicionado"
+      ],
+      "estado": "disponible"
+    },
+    {
+      "id": "117",
+      "nombre": "Suite",
+      "descripcion": "Lujosa suite con dos camas King y jacuzzi en el baño.",
+      "precio_por_noche": 480,
+      "maximo_huespedes": 4,
+      "imag": "../imagenes/habitaciones/suite_con_jacizzi.jpg",
+      "fechas_disponibles": [
+        "2025-03-3",
+        "2025-03-4",
+        "2025-03-5"
+      ],
+      "servicios": [
+        "Internet",
+        "Televisión",
+        "Aire acondicionado",
+        "Jacuzzi",
+        "Piscina privada"
+      ],
+      "estado": "reservada"
+    },
+    {
+      "id": "118",
+      "nombre": "individuales Sencillas",
+      "descripcion": "Habitación cómoda con cama individual, baño privado y vista al jardín.",
+      "precio_por_noche": 120,
+      "maximo_huespedes": 1,
+      "imag": "../imagenes/habitaciones/indivudual_sencilla.jpg",
+      "fechas_disponibles": [
+        "2025-03-6",
+        "2025-03-7",
+        "2025-03-8"
+      ],
+      "servicios": [
+        "Internet",
+        "Televisión",
+        "Aire acondicionado"
+      ],
+      "estado": "disponible"
+    },
+    {
+      "id": "119",
+      "nombre": "Deluxe Individuales",
+      "descripcion": "Habitación de lujo con cama King, baño de lujo y vista a la ciudad.",
+      "precio_por_noche": 240,
+      "maximo_huespedes": 1,
+      "imag": "../imagenes/habitaciones/habitacion_deluxe_individual1.jpg",
+      "fechas_disponibles": [
+        "2025-03-9",
+        "2025-03-10",
+        "2025-03-11"
+      ],
+      "servicios": [
+        "Internet",
+        "Televisión",
+        "Aire acondicionado",
+        "Mini-bar"
+      ],
+      "estado": "reservada"
+    },
+    {
+      "id": "120",
+      "nombre": "Suite",
+      "descripcion": "Espaciosa suite con una cama Queen, zona de trabajo y jacuzzi.",
+      "precio_por_noche": 450,
+      "maximo_huespedes": 3,
+      "imag": "../imagenes/habitaciones/suite_con_jacizzi.jpg",
+      "fechas_disponibles": [
+        "2025-03-12",
+        "2025-03-13",
+        "2025-03-14"
+      ],
+      "servicios": [
+        "Internet",
+        "Televisión",
+        "Aire acondicionado",
+        "Jacuzzi",
+        "Mini-bar"
+      ],
+      "estado": "disponible"
+    },
+    {
+      "id": "121",
+      "nombre": "Deluxe Individuales",
+      "descripcion": "Habitación moderna con cama King, baño privado y vistas a la piscina.",
+      "precio_por_noche": 260,
+      "maximo_huespedes": 1,
+      "imag": "../imagenes/habitaciones/habitacion_deluxe_individual.jpg",
+      "fechas_disponibles": [
+        "2025-03-15",
+        "2025-03-16",
+        "2025-03-17"
+      ],
+      "servicios": [
+        "Internet",
+        "Televisión",
+        "Aire acondicionado",
+        "Mini-bar"
+      ],
+      "estado": "disponible"
+    },
+    {
+      "id": "122",
+      "nombre": "individuales Sencillas",
+      "descripcion": "Habitación sencilla con cama individual y baño privado.",
+      "precio_por_noche": 110,
+      "maximo_huespedes": 1,
+      "imag": "../imagenes/habitaciones/indivudual_sencilla2.jpg",
+      "fechas_disponibles": [
+        "2025-03-18",
+        "2025-03-19",
+        "2025-03-20"
+      ],
+      "servicios": [
+        "Internet",
+        "Televisión",
+        "Aire acondicionado"
+      ],
+      "estado": "reservada"
+    },
+    {
+      "id": "123",
+      "nombre": "Suite",
+      "descripcion": "Lujosa suite con tres camas King, baño privado, jacuzzi y vista al océano.",
+      "precio_por_noche": 600,
+      "maximo_huespedes": 5,
+      "imag": "../imagenes/habitaciones/habitacion_suite.jpg",
+      "fechas_disponibles": [
+        "2025-03-21",
+        "2025-03-22",
+        "2025-03-23"
+      ],
+      "servicios": [
+        "Internet",
+        "Televisión",
+        "Aire acondicionado",
+        "Jacuzzi",
+        "Piscina privada",
+        "Mini-bar"
+      ],
+      "estado": "disponible"
+    },
+    {
+      "id": "124",
+      "nombre": "Deluxe Individuales",
+      "descripcion": "Habitación elegante con cama Queen, baño privado y diseño moderno.",
+      "precio_por_noche": 230,
+      "maximo_huespedes": 1,
+      "imag": "../imagenes/habitaciones/habitacion_deluxe_individual1.jpg",
+      "fechas_disponibles": [
+        "2025-03-24",
+        "2025-03-25",
+        "2025-03-26"
+      ],
+      "servicios": [
+        "Internet",
+        "Televisión",
+        "Aire acondicionado",
+        "Mini-bar"
+      ],
+      "estado": "reservada"
+    },
+    {
+      "id": "125",
+      "nombre": "Suite",
+      "descripcion": "Habitación con dos camas Queen, terraza privada y jacuzzi.",
+      "precio_por_noche": 480,
+      "maximo_huespedes": 4,
+      "imag": "../imagenes/habitaciones/habitacion_suite.jpg",
+      "fechas_disponibles": [
+        "2025-03-27",
+        "2025-03-28",
+        "2025-03-29"
+      ],
+      "servicios": [
+        "Internet",
+        "Televisión",
+        "Aire acondicionado",
+        "Jacuzzi",
+        "Mini-bar",
+        "Terraza privada"
+      ],
+      "estado": "disponible"
+    },
+    {
+      "id": "126",
+      "nombre": "individuales Sencillas",
+      "descripcion": "Habitación económica con cama individual y baño privado.",
+      "precio_por_noche": 95,
+      "maximo_huespedes": 1,
+      "imag": "../imagenes/habitaciones/habitacion_deluxe_individual.jpg",
+      "fechas_disponibles": [
+        "2025-03-30",
+        "2025-03-31",
+        "2025-04-1"
+      ],
+      "servicios": [
+        "Internet",
+        "Televisión",
+        "Aire acondicionado"
+      ],
+      "estado": "disponible"
+    },
+    {
+      "id": "127",
+      "nombre": "Suite",
+      "descripcion": "Suite espaciosa con área de estar, jacuzzi y vista al mar.",
+      "precio_por_noche": 550,
+      "maximo_huespedes": 5,
+      "imag": "../imagenes/habitaciones/suite_con_jacizzi.jpg",
+      "fechas_disponibles": [
+        "2025-04-2",
+        "2025-04-3",
+        "2025-04-4"
+      ],
+      "servicios": [
+        "Internet",
+        "Televisión",
+        "Aire acondicionado",
+        "Jacuzzi",
+        "Piscina privada",
+        "Mini-bar"
+      ],
+      "estado": "reservada"
+    },
+    {
+      "id": "128",
+      "nombre": "Deluxe Individuales",
+      "descripcion": "Habitación de lujo con cama King, baño privado y vista al jardín.",
+      "precio_por_noche": 270,
+      "maximo_huespedes": 1,
+      "imag": "../imagenes/habitaciones/delux_cama_king.jpg",
+      "fechas_disponibles": [
+        "2025-04-5",
+        "2025-04-6",
+        "2025-04-7"
+      ],
+      "servicios": [
+        "Internet",
+        "Televisión",
+        "Aire acondicionado",
+        "Mini-bar"
+      ],
+      "estado": "disponible"
+    },
+    {
+      "id": "129",
+      "nombre": "Suite",
+      "descripcion": "Gran suite con dos camas King, jacuzzi, y una hermosa vista al mar.",
+      "precio_por_noche": 550,
+      "maximo_huespedes": 4,
+      "imag": "../imagenes/habitaciones/habitacion_suite.jpg",
+      "fechas_disponibles": [
+        "2025-04-8",
+        "2025-04-9",
+        "2025-04-10"
+      ],
+      "servicios": [
+        "Internet",
+        "Televisión",
+        "Aire acondicionado",
+        "Jacuzzi",
+        "Piscina privada",
+        "Mini-bar"
+      ],
+      "estado": "reservada"
+    },
+    {
+      "id": "130",
+      "nombre": "individuales Sencillas",
+      "descripcion": "Habitación sencilla con cama individual, ideal para viajeros solitarios.",
+      "precio_por_noche": 100,
+      "maximo_huespedes": 1,
+      "imag": "../imagenes/habitaciones/indivudual_sencilla2.jpg",
+      "fechas_disponibles": [
+        "2025-04-11",
+        "2025-04-12",
+        "2025-04-13"
+      ],
+      "servicios": [
+        "Internet",
+        "Televisión",
+        "Aire acondicionado"
+      ],
+      "estado": "disponible"
     }
   ],
   "reservas": {

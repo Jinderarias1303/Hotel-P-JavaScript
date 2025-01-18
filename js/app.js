@@ -11,22 +11,20 @@ function pintarDatos(datos){
     datos.forEach(dato => {
         const div =document.createElement('div');
         div.innerHTML = `
-            <div class="bg-white border-gray-300 rounded-lg p-1 w-full mr-1 ">
-    <img src="${dato.imag}" alt="Hotel" class="w-full h-48 rounded-t-lg object-cover " />
-    <div class="p-4 flex flex-col justify-between">
-        <div>
-        
-            <p class="text-sm text-black mt-1">ID: ${dato.id}</p>
-            <p class="text-sm text-black mt-2">Tipo de habitación: ${dato.nombre}</p>
-            <p class="text-sm text-black mt-2">Descripción: ${dato.descripcion}</p>
-            <p class="text-sm text-black mt-2">Servicios: ${dato.servicios}</p>
-            <p class="text-2x1 text-black mt-2">Máximo de huéspedes: ${dato.maximo_huespedes}</p>
-            <p class="text-black text-2xl mt-2">Días disponibles: ${dato.fechas_disponibles}<br></p>
-            <p class="text-green-700 text-3xl mt-2">$${dato.precio_por_noche} por noche</p>
-        </div>
-        <div class="flex justify-center items-center mt-4 space-x-4">
-            <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-400" id="Estado">
-                <span class="text-white">${dato.estado}</span>
+            <div class="bg-gray-100 rounded-lg shadow-sm overflow-hidden w-full m-1 border-black border-2">
+    <img src="${dato.imag}" alt="Hotel" class="w-full h-[300px] object-container" />
+    <div class=" m-3 space-y-4">
+        <h2 class="text-lg font-semibold text-gray-800">${dato.nombre}</h2>
+        <p class="text-sm text-gray-600">ID: ${dato.id}</p>
+        <p class="text-sm text-gray-600">Tipo de habitación: ${dato.nombre}</p>
+        <p class="text-sm text-gray-600">Descripción: ${dato.descripcion}</p>
+        <p class="text-sm text-gray-600">Servicios: ${dato.servicios}</p>
+        <p class="text-sm text-gray-600">Máximo de huéspedes: ${dato.maximo_huespedes}</p>
+        <p class="text-sm text-gray-600">Días disponibles: ${dato.fechas_disponibles}</p>
+        <div class="flex justify-between items-center">
+            <p class="text-xl font-bold text-gray-800">$${dato.precio_por_noche} por noche</p>
+            <button class="bg-blue-500 text-white px-4 py-2 rounded-full hover:bg-blue-400 text-sm">
+                ${dato.estado}
             </button>
         </div>
     </div>
