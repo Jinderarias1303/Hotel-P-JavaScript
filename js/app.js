@@ -16,12 +16,12 @@ function pintarDatos(datos){
     <div class="p-4 flex flex-col justify-between">
         <div>
         
-            <p class="text-sm text-gray-700 mt-1">ID: ${dato.id}</p>
-            <p class="text-sm text-gray-700 mt-2">Tipo de habitación: ${dato.nombre}</p>
-            <p class="text-sm text-gray-700 mt-2">Descripción: ${dato.descripcion}</p>
-            <p class="text-sm text-gray-700 mt-2">Servicios: ${dato.servicios}</p>
-            <p class="text-sm text-gray-700 mt-2">Máximo de huéspedes: ${dato.maximo_huespedes}</p>
-            <p class="text-black text-2xl mt-2">Días disponibles: ${dato.fechas_disponibles}</p>
+            <p class="text-sm text-black mt-1">ID: ${dato.id}</p>
+            <p class="text-sm text-black mt-2">Tipo de habitación: ${dato.nombre}</p>
+            <p class="text-sm text-black mt-2">Descripción: ${dato.descripcion}</p>
+            <p class="text-sm text-black mt-2">Servicios: ${dato.servicios}</p>
+            <p class="text-2x1 text-black mt-2">Máximo de huéspedes: ${dato.maximo_huespedes}</p>
+            <p class="text-black text-2xl mt-2">Días disponibles: ${dato.fechas_disponibles}<br></p>
             <p class="text-green-700 text-3xl mt-2">$${dato.precio_por_noche} por noche</p>
         </div>
         <div class="flex justify-center items-center mt-4 space-x-4">

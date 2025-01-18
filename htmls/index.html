@@ -4,98 +4,142 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hotel el Rincón de Camila</title>
+    <title>Refugio del horizonte</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <link rel="stylesheet" href="https://cdn-icons-png.flaticon.com/128/5273/5273322.png"> -->
 </head>
 
-<body class=" text-gray-800"
-    style="background-image: url('../imagenes/redes_sociales/estelar-cartagena-jecEWBKS4-transformed.jpeg'); background-size: cover; background-position: center;">
-    <header class=" p-2 flex flex-wrap items-center justify-between " >
-        <h1 class="text-2xl font-bold text-black text-center w-full sm:w-auto sm:text-left rounded-2xl bg-gray-100 p-2 ">
-            <p class=" italic font-semiblond  hover:text-blue-800 text-4xl tracking-wide">Hotel el Rincón de Camila</p>
-        </h1>
-        <div class="flex flex-wrap gap-2 mt-4 sm:mt-2 ">
-            
-            <a href="./Disponibilidad.html"  class="hover:border-blue-500">
-                <button class=" hover:border-black hover:border-2 rounded-2xl p-2 bg-gray-100 " title="boton_disponibilidad">
-                    <p class="hover:text-blue-800">Disponibilidad</p>
-                </button>
+<body class=" text-gray-800">
+    <!-- header -->
+    <header
+        class="p-4 flex flex-wrap items-center bg-gradient-to-r from-blue-700 to-blue-900 justify-between shadow-md">
+        <div class="flex items-center w-full sm:w-auto sm:text-left">
+            <img src="../imagenes/redes_sociales/recurso.png" alt="Hotel Icon" class="mr-2 w-8 h-8 w-[5%] h-[5%]">
+            <a href="./index.html">
+                <h1
+                    class="text-2xl font-extrabold text-white text-center sm:text-left p-4 bg-gradient-to-r from-indigo-500 to-blue-600 rounded-2xl shadow-lg">
+                    <span
+                        class="italic font-extrabold hover:text-yellow-400 text-3xl tracking-wider transform transition duration-300 ease-in-out hover:scale-105">Refugio
+                        del horizonte</span>
+                </h1>
             </a>
-            <a href="./contacto.html" class="hover:border-blue-500" >
-                <button class=" hover:border-black hover:border-2  rounded-2xl p-2 bg-gray-100 " title="boton_contacto">
-                    <p class="hover:text-blue-800">Contáctanos</p>
-                </button>
-            </a>
-            <a href="./iniciar_sesion.html" class="hover:border-blue-500" >
-                <button class=" hover:border-black hover:border-2  rounded-2xl p-2 bg-gray-100 " title="boton_contacto">
-                    <p class="hover:text-blue-800">Iniciar sesión</p>
-                </button>
-            </a>
+
+
         </div>
+        <nav class="flex flex-wrap gap-4 mt-4 sm:mt-0">
+            <a href="./Disponibilidad.html" class="hover:scale-105">
+                <button class="rounded-2xl px-4 py-2 bg-white text-blue-700 hover:bg-blue-300 ">
+                    <p class="decoration-wavy">Disponibilidad</p>
+                </button>
+            </a>
+            <a href="./contacto.html" class="hover:scale-105">
+                <button class="rounded-2xl px-4 py-2 bg-white text-blue-700 hover:bg-blue-300">Contáctanos</button>
+            </a>
+            <a href="./iniciar_sesion.html" class="hover:scale-105">
+                <button class="rounded-2xl px-4 py-2 bg-white text-blue-700 hover:bg-blue-300">Iniciar sesión</button>
+            </a>
+        </nav>
     </header>
-    <div class="flex items-center justify-center min-h-screen ">
-        <div class="w-11/12 sm:w-4/5 h-[90%] bg-white border border-gray-200 rounded-lg shadow-md overflow-hidden">
+
+    <!-- imagenes de carrusel -->
+    <div class="p-6 rounded-2xl shadow-lg bg-gray-200  m-3 ">
+        <div class=" border-black rounded-lg shadow-md overflow-hidden">
             <div class="relative overflow-hidden">
-                <div id="carousel" class="flex transition-transform duration-500">
-                    <img class="w-full h-72 object-cover flex-shrink-0" src="../imagenes/areas_hotel/entrada_hotal.jpg"
-                        alt="Imagen 1">
-                    <img class="w-full h-72 object-cover flex-shrink-0" src="../imagenes/areas_hotel/piscina_hotel.jpg"
+                <div id="carousel" class="flex transition-transform duration-500 h-[600px]">
+                    <img class="w-full  object-container flex-shrink-0"
+                        src="../imagenes\areas_hotel\piscina_hotel1280x794.jpg" alt="Imagen 1">
+                    <img class="w-full  object-container flex-shrink-0" src="../imagenes/areas_hotel/vistas1.jpg"
                         alt="Imagen 2">
-                    <img class="w-full h-72 object-cover flex-shrink-0" src="../imagenes/areas_hotel/sala_comun.jpg"
-                        alt="Imagen 3">
+                    <img class="w-full  object-container flex-shrink-0"
+                        src="../imagenes/areas_hotel/hoteles con vistas.webp" alt="Imagen 3">
                 </div>
-            </div>
-            <div class="p-6">
-                <p class="text-lg text-gray-800 mt-2 ">
-                    Disfruta de una experiencia completa en nuestro hotel, donde encontrarás 30 habitaciones diseñadas
-                    para brindarte el máximo confort: 10 Deluxe Individuales, 10 Suites, 10 Individuales Sencillas. <br><br>
-                    Relájate en nuestra espectacular piscina o revitalízate en el exclusivo spa. Para tu
-                    entretenimiento, contamos con una zona de juegos y un casino en el 5to piso, ideales para disfrutar
-                    al máximo de tu estancia. <br><br>
-                    Además, podrás deleitarte con un bufet abierto las 24 horas y una zona de bar, donde nuestro
-                    bartender estará listo para preparar tus bebidas favoritas.
-                </p>
-                <button class="bg-blue-300 border-transparent text-blue-800 rounded-2xl p-2 mt-4 "
-                    title="boton_contacto">
-                    Disponibilidad en todo momento
-                </button>
-                <button class="bg-blue-300 border-transparent text-blue-800 rounded-2xl p-2 mt-4"
-                    title="boton_contacto">
-                    Jacizzi
-                </button>
-                <button class="bg-blue-300 border-transparent text-blue-800 rounded-2xl p-2 mt-4"
-                    title="boton_contacto">
-                    Bartender
-                </button>
-                <button class="bg-blue-300 border-transparent text-blue-800 rounded-2xl p-2 mt-4"
-                    title="boton_contacto">
-                    Piscina
-                </button>
-                <button class="bg-blue-300 border-transparent text-blue-800 rounded-2xl p-2 mt-4 "
-                    title="boton_contacto">
-                    Casino
-                </button>
-                <button class="bg-blue-300 border-transparent text-blue-800 rounded-2xl p-2 mt-4 "
-                    title="boton_contacto">
-                    Entre otros
-                </button>
             </div>
         </div>
     </div>
+    <!-- info -->
+    <div class="p-6 rounded-2xl shadow-lg bg-gray-100 m-3">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 m-3  border-black">
+            <div class="p-6 rounded-xl shadow-lg bg-white">
+                <h2 class="text-2xl font-semibold text-blue-700 mb-4 ">Habitaciones de Lujo</h2>
+                <p class="text-gray-800 text-lg">
+                    Vive el máximo confort en nuestras 30 habitaciones excepcionales: 10 Deluxe Individuales, 10 Suites
+                    y 10 Habitaciones Individuales Sencillas. Diseñadas para brindarte el descanso que mereces, cada una
+                    ofrece un ambiente exclusivo y relajante.
+                </p>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow-lg ">
+                <h2 class="text-2xl font-semibold text-blue-700 mb-4">Entretenimiento y Diversión</h2>
+                <p class="text-gray-800 text-lg">
+                    Disfruta de momentos emocionantes en nuestra zona de juegos o visita nuestro casino en el 5to piso.
+                    Si lo tuyo es relajarte, nuestra espectacular piscina y exclusivo spa te esperan para un escape
+                    total.
+                </p>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow-lg">
+                <h2 class="text-2xl font-semibold text-blue-700 mb-4">Gastronomía 24/7</h2>
+                <p class="text-gray-800 text-lg">
+                    Déjate consentir con nuestro bufet abierto las 24 horas y disfruta de una experiencia culinaria que
+                    satisface todos los gustos. Además, relájate en la zona de bar, donde nuestros bartenders están
+                    listos para preparar tus bebidas favoritas.
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- iconos  -->
+    <div class="p-6 rounded-2xl shadow-lg bg-gray-100 m-3">
+        <h1 class="text-2xl font-extrabold sm:text-left p-4 rounded-2xl shadow-lg">
+            <span
+                class="italic font-extrabold hover:text-yellow-400 text-3xl tracking-wider transform transition duration-300 ease-in-out hover:scale-105">Algunos
+                de nuestros servicios. </span>
+        </h1>
+        <div class="flex flex-wrap gap-4 mt-4">
+            <button class="flex items-center bg-blue-500 text-white rounded-2xl px-4 py-2 hover:bg-blue-700 mb-3">
+                <img src="https://img.icons8.com/ios/50/ffffff/bed.png" alt="icon" class="mr-2" width="20" height="20">
+                Habitaciones de lujo
+            </button>
+            <button class="flex items-center bg-blue-500 text-white rounded-2xl px-4 py-2 hover:bg-blue-700 mb-3">
+                <img src="https://img.icons8.com/ios/50/ffffff/restaurant.png" alt="icon" class="mr-2" width="20"
+                    height="20"> Restaurantes gourmet
+            </button>
+            <button class="flex items-center bg-blue-500 text-white rounded-2xl px-4 py-2 hover:bg-blue-700 mb-3">
+                <img src="https://img.icons8.com/ios/50/ffffff/spa.png" alt="icon" class="mr-2" width="20" height="20">
+                Spa
+                y bienestar
+            </button>
+            <button class="flex items-center bg-blue-500 text-white rounded-2xl px-4 py-2 hover:bg-blue-700 mb-3">
+                <img src="https://img.icons8.com/ios/50/ffffff/swimming-pool.png" alt="icon" class="mr-2" width="20"
+                    height="20"> Piscina(s)
+            </button>
+            <button class="flex items-center bg-blue-500 text-white rounded-2xl px-4 py-2 hover:bg-blue-700 mb-3">
+                <img src="https://img.icons8.com/ios/50/ffffff/dumbbell.png" alt="icon" class="mr-2" width="20"
+                    height="20">
+                Gimnasio
+            </button>
+            <button class="flex items-center bg-blue-500 text-white rounded-2xl px-4 py-2 hover:bg-blue-700 mb-3">
+                <img src="https://img.icons8.com/ios/50/ffffff/wifi.png" alt="icon" class="mr-2" width="20" height="20">
+                Wi-Fi de alta velocidad
+            </button>
+            <button class="flex items-center bg-blue-500 text-white rounded-2xl px-4 py-2 hover:bg-blue-700 mb-3">
+                <img src="https://img.icons8.com/ios/50/ffffff/cocktail.png" alt="icon" class="mr-2" width="20"
+                    height="20">
+                Bar y lounge
+            </button>
+        </div>
+    </div>
+
     <!-- boton whatsapp -->
-    <div class="sticky bottom-4 left-4 p-4">
+    <div class="fixed bottom-4 left-4">
         <a href="https://api.whatsapp.com/send?phone=3112582493" target="_blank">
-            <button class="bg-blue-500 text-white px-2 py-2 rounded-full hover:bg-blue-700 " title="boton a whatsapp">
-                <img src="../imagenes/redes_sociales/whatsapp.png" title="whatsapp icono" class="w-16 h-16 max-h-full">
+            <button class="bg-green-500 text-white p-4 rounded-full shadow-lg hover:bg-green-700">
+                <img src="../imagenes/redes_sociales/whatsapp.png" alt="WhatsApp" class="w-12 h-12">
             </button>
         </a>
     </div>
     <!-- footer -->
-    <footer class="text-black text-center p-4 mt-6 ">
-        <div class="text-center mt-6 ">
-            <p class="text-lg  text-black  opacity-80 bg-blue-500 rounded-lg">© 2025 Hotel El Rincón de Camila. Todos los derechos reservados.</p>
-        </div>
+    <footer class="text-white text-center p-6 bg-blue-900 mt-8">
+        <p class="text-lg opacity-80">© 2025 Hotel Refugio del Horizonte. Todos los derechos reservados.</p>
     </footer>
 </body>
 <script src="../js/carrusel.js" defer></script>
+
 </html>
