@@ -1,10 +1,9 @@
-
 async function obtenerDatos() {
-    const url = 'http://localhost:3000/rooms'; 
+    const url = 'http://localhost:3000/rooms';
     try {
         const response = await fetch(url);
         const datos = await response.json();
-        return datos; 
+        return datos;
     } catch (error) {
         console.error("Error al obtener los datos:", error);
         return [];
@@ -34,6 +33,7 @@ document.getElementById("consulta-form").addEventListener("submit", async functi
     const fechaFin = document.getElementById("fecha-fin").value;
     const personas = parseInt(document.getElementById("personas").value);
     const resultados = document.getElementById("resultados");
+    const contenedor = document.getElementById("contenedor");
 
     // Validaciones básicas
     if (!fechaInicio || !fechaFin || !personas) {
@@ -44,21 +44,76 @@ document.getElementById("consulta-form").addEventListener("submit", async functi
         alert("La fecha de inicio debe ser anterior a la fecha de fin.");
         return;
     }
+
     const habitaciones = await obtenerDatos();
     const disponibles = filtrarHabitaciones(habitaciones, fechaInicio, fechaFin, personas);
+
     if (disponibles.length === 0) {
         resultados.innerHTML = `<p class="text-red-500">No se encontraron habitaciones disponibles.</p>`;
+        contenedor.innerHTML = ""; // Limpia las habitaciones mostradas previamente
     } else {
-        resultados.innerHTML = disponibles.map(habitacion => {
+        contenedor.innerHTML = disponibles.map(habitacion => {
             return `
-                <div class="p-4 bg-white rounded-lg shadow-md mb-4">
-                    <img src="${habitacion.imag}" alt="Hotel" class="w-full h-[300px] object-container" />
+                <div class="p-4 bg-white rounded-lg shadow-md mb-4 " id="habitacion-${habitacion.id}">
+                    <img src="${habitacion.imag}" alt="Hotel" class="w-full h-[300px] object-contain" />
                     <h3 class="text-lg font-bold text-blue-900">${habitacion.nombre}</h3>
-                    <p class="text-gray-700">Precio por noche: $${habitacion.precio_por_noche}</p>
+                    <p id="precio-${habitacion.id}" class="text-gray-700">Precio por noche: $${habitacion.precio_por_noche}</p>
+                    <p id="habitacion-id-${habitacion.id}" class="text-gray-900">Id habitacion: ${habitacion.id}</p>
                     <p class="text-gray-700">Capacidad máxima: ${habitacion.maximo_huespedes} persona(s)</p>
-                    <p class="text-gray-700">Total por ${(new Date(fechaFin) - new Date(fechaInicio)) / (1000 * 60 * 60 * 24)} noche(s): $${habitacion.precio_por_noche * ((new Date(fechaFin) - new Date(fechaInicio)) / (1000 * 60 * 60 * 24))}</p>
+                    <p id="total" class="text-gray-800 ">Total por ${(new Date(fechaFin) - new Date(fechaInicio)) / (1000 * 60 * 60 * 24)} noche(s): $${habitacion.precio_por_noche * ((new Date(fechaFin) - new Date(fechaInicio)) / (1000 * 60 * 60 * 24))}</p>
+                    <button class="bg-blue-500 text-white px-4 py-2 rounded-full hover:bg-blue-400 text-sm reservar-btn">Reservar</button>
                 </div>
             `;
         }).join("");
+        const id_usuario = JSON.parse(localStorage.getItem('usuario'));
+        const id = id_usuario.id;
+        console.log(id);
+        // Agrega el evento a todos los botones de reservar
+        document.querySelectorAll(".reservar-btn").forEach(boton => {
+            boton.addEventListener("click", async (e) => {
+                const habitacionSeleccionada = e.target.closest("div");
+
+                // Usamos el id único para acceder al contenido de la habitación
+                const id_habitacion = habitacionSeleccionada.querySelector(`#habitacion-id-${habitacionSeleccionada.id.split('-')[1]}`).textContent.split(':')[1].trim();
+                console.log(id_habitacion);
+                //const precio_total = habitacionSeleccionada.getElementById("total");
+                //console.log(precio_total);
+                
+
+                const fecha_entrada = document.getElementById("fecha-inicio").value;
+                const fecha_salida = document.getElementById("fecha-fin").value;
+
+                const reserva = {
+                    id_usuario: parseInt(id),
+                    id_habitacion: parseInt(id_habitacion),
+                    fecha_entrada,
+                    fecha_salida,
+                    //precio_total: parseFloat(precio_total),
+                    estado: "activa"
+                };
+
+                console.log(reserva);
+                try {
+                    const url = 'http://localhost:3000/reservas';
+                    const response = await fetch(url, {
+                        method: 'POST',
+                        body: JSON.stringify(reserva),
+                        headers: {
+                            'Content-Type': 'application/json'
+                        }
+                    });
+
+                    if (!response.ok) {
+                        throw new Error('Error al subir la reserva');
+                    }
+
+                    alert('Reserva realizada con éxito!');
+                    habitacionSeleccionada.classList.toggle("hidden");
+                } catch (error) {
+                    console.error('Error al subir la reserva:', error);
+                    alert('Hubo un problema al realizar la reserva.');
+                }
+            });
+        });
     }
 });
