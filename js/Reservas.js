@@ -66,8 +66,8 @@ document.getElementById("consulta-form").addEventListener("submit", async functi
             `;
         }).join("");
         const id_usuario = JSON.parse(localStorage.getItem('usuario'));
-        const id = id_usuario.id;
-        console.log(id);
+        const id_us = id_usuario.id;
+        console.log(id_us);
         // Agrega el evento a todos los botones de reservar
         document.querySelectorAll(".reservar-btn").forEach(boton => {
             boton.addEventListener("click", async (e) => {
@@ -76,42 +76,27 @@ document.getElementById("consulta-form").addEventListener("submit", async functi
                 // Usamos el id único para acceder al contenido de la habitación
                 const id_habitacion = habitacionSeleccionada.querySelector(`#habitacion-id-${habitacionSeleccionada.id.split('-')[1]}`).textContent.split(':')[1].trim();
                 console.log(id_habitacion);
-                //const precio_total = habitacionSeleccionada.getElementById("total");
-                //console.log(precio_total);
-                
-
                 const fecha_entrada = document.getElementById("fecha-inicio").value;
+                console.log(fecha_entrada);
                 const fecha_salida = document.getElementById("fecha-fin").value;
-
-                const reserva = {
-                    id_usuario: parseInt(id),
-                    id_habitacion: parseInt(id_habitacion),
-                    fecha_entrada,
-                    fecha_salida,
-                    //precio_total: parseFloat(precio_total),
-                    estado: "activa"
-                };
-
-                console.log(reserva);
+                console.log(fecha_salida);
+                const estado = "Reservado";
                 try {
-                    const url = 'http://localhost:3000/reservas';
+                    const url = 'http://localhost:3000/Reservas';
                     const response = await fetch(url, {
                         method: 'POST',
-                        body: JSON.stringify(reserva),
+                        body: JSON.stringify({ id_us, id_habitacion, fecha_entrada, fecha_salida, estado }),
                         headers: {
                             'Content-Type': 'application/json'
                         }
                     });
-
+                    console.log(response);
+                    console.log("subida?");
                     if (!response.ok) {
-                        throw new Error('Error al subir la reserva');
+                        throw new Error('Error al registrar el usuario');
                     }
-
-                    alert('Reserva realizada con éxito!');
-                    habitacionSeleccionada.classList.toggle("hidden");
                 } catch (error) {
-                    console.error('Error al subir la reserva:', error);
-                    alert('Hubo un problema al realizar la reserva.');
+                    console.log(error);
                 }
             });
         });

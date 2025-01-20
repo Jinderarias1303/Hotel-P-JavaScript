@@ -15,6 +15,10 @@
       "contraseña": "1306",
       "telefono": "3112584293",
       "reservas": []
+    },
+    {
+      "id": "2907",
+      "id_us": "1"
     }
   ],
   "rooms": [
@@ -620,13 +624,39 @@
       "estado": "disponible"
     }
   ],
-  "reservas": {
-    "id": 1,
-    "id_usuario": 1,
-    "id_habitacion": 101,
-    "fecha_entrada": "2025-01-15",
-    "fecha_salida": "2025-01-16",
-    "precio_total": 150,
-    "estado": "inactiva"
-  }
+  "Reservas": [
+    {
+      "id": "1",
+      "id_usuario": 1,
+      "id_habitacion": 101,
+      "fecha_entrada": "2025-01-15",
+      "fecha_salida": "2025-01-16",
+      "precio_total": 150,
+      "estado": "inactiva"
+    },
+    {
+      "id": "1fee",
+      "id_us": "1",
+      "id_habitacion": "102",
+      "fecha_entrada": "2025-01-19",
+      "fecha_salida": "2025-01-21",
+      "estado": "Reservado"
+    },
+    {
+      "id": "6fae",
+      "id_us": "1",
+      "id_habitacion": "102",
+      "fecha_entrada": "2025-01-19",
+      "fecha_salida": "2025-01-21",
+      "estado": "Reservado"
+    },
+    {
+      "id": "2ee8",
+      "id_us": "675f",
+      "id_habitacion": "102",
+      "fecha_entrada": "2025-01-19",
+      "fecha_salida": "2025-01-22",
+      "estado": "Reservado"
+    }
+  ]
 }
