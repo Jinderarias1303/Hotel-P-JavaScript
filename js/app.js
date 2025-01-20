@@ -5,6 +5,7 @@ async function obtenerDatos() {
     pintarDatos(datos)
 }
 
+
 function pintarDatos(datos){
     const contenedor =document.getElementById("contenedor");
     
@@ -34,28 +35,4 @@ function pintarDatos(datos){
         contenedor.appendChild(div);
     });
 }
-
-
-
-// async function reserva() {
-// await obtenerDatos()
-// const boton_reserva = document.getElementById("Estado")
-
-
-// boton_reserva.addEventListener("click", () =>{
-//     alert("AAAA")
-// })
-
-
-
-//     if (boton_reserva === Disponible) {
-        
-//     }
-    
-    
-    
-
-
-// }
-// reserva();
 obtenerDatos();

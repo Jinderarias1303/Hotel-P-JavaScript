@@ -9,35 +9,11 @@
       "reservas": []
     },
     {
-      "id": "4",
-      "nombre": "Jinder",
-      "correo": "YaMeR.perez@ejemplo.com",
-      "contraseña": "Contraseñasegura",
-      "telefono": "12345678909",
-      "reservas": []
-    },
-    {
-      "id": "a685",
-      "nombre": "Jinder Arias",
-      "correo": "jinder@gmail.com",
-      "contraseña": "123",
-      "telefono": "54321",
-      "reservas": []
-    },
-    {
-      "id": "d748",
-      "nombre": "Gabriel Sanchez",
-      "correo": "yamder@gmail.com",
-      "contraseña": "9876",
-      "telefono": "33333",
-      "reservas": []
-    },
-    {
-      "id": "66b2",
-      "nombre": "Anderson loco",
-      "correo": "anderson@gmail.com",
-      "contraseña": "123456",
-      "telefono": "123456",
+      "id": "675f",
+      "nombre": "Sara",
+      "correo": "sara@gmial.com",
+      "contraseña": "1306",
+      "telefono": "3112584293",
       "reservas": []
     }
   ],

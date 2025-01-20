@@ -8,28 +8,33 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <header class="p-4 flex flex-wrap items-center bg-gradient-to-r from-blue-700 to-blue-900 justify-between shadow-md">
-    <div class="flex items-center w-full sm:w-auto sm:text-left">
-        <img src="../imagenes/redes_sociales/recurso.png" alt="Hotel Icon" class="mr-2 w-8 h-8 w-[5%] h-[5%]">
+    <!-- Logo y título -->
+    <div class="flex items-center">
+        <img src="../imagenes/redes_sociales/recurso.png" alt="Hotel Icon" class="mr-2 w-8 h-8">
         <a href="./index.html">
             <h1
-                class="text-2xl font-extrabold text-white text-center sm:text-left p-4 bg-gradient-to-r from-indigo-500 to-blue-600 rounded-2xl shadow-lg">
+                class="text-2xl font-extrabold text-white p-4 bg-gradient-to-r from-indigo-500 to-blue-600 rounded-2xl shadow-lg">
                 <span
                     class="italic font-extrabold hover:text-yellow-400 text-3xl tracking-wider transform transition duration-300 ease-in-out hover:scale-105">Refugio
-                    del horizonte</span>
+                    del Horizonte</span>
             </h1>
         </a>
     </div>
-    <nav class="flex flex-wrap gap-4 mt-4 sm:mt-0">
+
+    <!-- Botón de menú hamburguesa (solo visible en tablets y móviles) -->
+    <button id="menu-btn"
+        class="lg:hidden text-white focus:outline-none focus:ring-2 focus:ring-yellow-500">
+        <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+    </button>
+
+    <!-- Menú de navegación -->
+    <nav id="menu"
+        class="hidden w-full lg:flex lg:flex-row lg:space-x-6 lg:justify-end mt-4 lg:mt-0 lg:w-auto">
         <a href="./index.html" class="hover:scale-105">
-            <button class="rounded-2xl px-4 py-2 bg-white text-blue-700 hover:bg-blue-300">Inicio</button>
-        </a>
-        <a href="./Disponibilidad.html" class="hover:scale-105">
-            <button class="rounded-2xl px-4 py-2 bg-white text-blue-700 hover:bg-blue-300 ">
-                <p class="decoration-wavy">Disponibilidad</p>
-            </button>
-        </a>
-        <a href="./contacto.html" class="hover:scale-105">
-            <button class="rounded-2xl px-4 py-2 bg-white text-blue-700 hover:bg-blue-300">Contáctanos</button>
+            <button class="rounded-2xl px-4 py-2 bg-white text-blue-700 hover:bg-blue-300 mt-[20px]">Inicio</button>
         </a>
     </nav>
 </header>

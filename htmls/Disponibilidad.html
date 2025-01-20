@@ -7,49 +7,115 @@
     <title>Disponibilidad_hotel_rincon_del_horizonte</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="../js/app.js" defer></script>
+    <script src="../js/Reservas.js" defer></script>
+    <script src="../js/boton_menu.js" defer></script>
+    <script src="../js/cargar_usuario.js" defer></script>
+    
 </head>
 
 <body class="bg-gray-100">
     <!-- header -->
-    <header
-        class="p-4 flex flex-wrap items-center bg-gradient-to-r from-blue-700 to-blue-900 justify-between shadow-md">
-        <div class="flex items-center w-full sm:w-auto sm:text-left">
-            <img src="../imagenes/redes_sociales/recurso.png" alt="Hotel Icon" class="mr-2 w-8 h-8 w-[5%] h-[5%]">
+    <header class="p-4 flex flex-wrap items-center bg-gradient-to-r from-blue-700 to-blue-900 justify-between shadow-md">
+        <!-- Logo y título -->
+        <div class="flex items-center">
+            <img src="../imagenes/redes_sociales/recurso.png" alt="Hotel Icon" class="mr-2 w-8 h-8">
             <a href="./index.html">
                 <h1
-                    class="text-2xl font-extrabold text-white text-center sm:text-left p-4 bg-gradient-to-r from-indigo-500 to-blue-600 rounded-2xl shadow-lg">
+                    class="text-2xl font-extrabold text-white p-4 bg-gradient-to-r from-indigo-500 to-blue-600 rounded-2xl shadow-lg">
                     <span
                         class="italic font-extrabold hover:text-yellow-400 text-3xl tracking-wider transform transition duration-300 ease-in-out hover:scale-105">Refugio
-                        del horizonte</span>
+                        del Horizonte</span>
                 </h1>
             </a>
         </div>
-        <nav class="flex flex-wrap gap-4 mt-4 sm:mt-0">
+    
+        <!-- Botón de menú hamburguesa (solo visible en tablets y móviles) -->
+        <button id="menu-btn"
+            class="lg:hidden text-white focus:outline-none focus:ring-2 focus:ring-yellow-500">
+            <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+        </button>
+    
+        <!-- Menú de navegación -->
+        <nav id="menu"
+            class="hidden w-full lg:flex lg:flex-row lg:space-x-6 lg:justify-end mt-4 lg:mt-0 lg:w-auto">
+            <button class="flex items-center bg-white text-blue-900 rounded-2xl px-4 py-2 hover:bg-blue-100 mb-3 mt-[20px]">
+                <img src="../imagenes/redes_sociales/usuario.png" alt="icon" class="mr-2" width="20" height="20">
+                <div id="usuario_actual">
+
+                </div>
+            </button>
             <a href="./index.html" class="hover:scale-105">
-                <button class="rounded-2xl px-4 py-2 bg-white text-blue-700 hover:bg-blue-300">Inicio</button>
+                <button class="rounded-2xl px-4 py-2 bg-white text-blue-700 hover:bg-blue-300 mt-[20px]">Inicio</button>
             </a>
-            <a href="./contacto.html" class="hover:scale-105">
-                <button class="rounded-2xl px-4 py-2 bg-white text-blue-700 hover:bg-blue-300">Contáctanos</button>
+            <a href="./contacto.html" class="hover:scale-105 mt-2 lg:mt-0">
+                <button class="rounded-2xl px-4 py-2 bg-white text-blue-700 hover:bg-blue-300 mt-[20px]">Contáctanos</button>
+            </a>
+            <a href="./iniciar_sesion.html" class="hover:scale-105 mt-2 lg:mt-0">
+                <button id="sesion" class="rounded-2xl px-4 py-2 bg-white text-blue-700 hover:bg-blue-300 mt-[20px]">Iniciar sesión</button>
             </a>
         </nav>
     </header>
+    <!--  hacer la reserva -->
+    <div class="container mx-auto py-10 px-4">
+        <h1 class="text-2xl font-bold text-center mb-6 text-blue-900">Consulta de Disponibilidad</h1>
+
+        <!-- Formulario -->
+        <form id="consulta-form" class="bg-white p-6 rounded-lg shadow-md max-w-md mx-auto">
+            <div class="mb-4">
+                <label for="fecha-inicio" class="block text-gray-700 font-bold">Fecha de Inicio</label>
+                <input type="date" id="fecha-inicio"
+                    class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    required>
+            </div>
+
+            <div class="mb-4">
+                <label for="fecha-fin" class="block text-gray-700 font-bold">Fecha de Fin</label>
+                <input type="date" id="fecha-fin"
+                    class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    required>
+            </div>
+
+            <div class="mb-4">
+                <label for="personas" class="block text-gray-700 font-bold">Número de Personas</label>
+                <input type="number" id="personas"
+                    class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    min="1" required>
+            </div>
+
+            <button type="submit" class="w-full bg-blue-700 text-white py-2 rounded-lg hover:bg-blue-600">
+                Consultar
+            </button>
+        </form>
+
+        <!-- Resultados -->
+        <div id="resultados" class="mt-8"></div>
+    </div>
+    <!-- pintar habitaciones :`) -->
     <div class="bg-white text-white py-6 mt-8 ">
+        <h1 class="text-2xl font-extrabold sm:text-left p-4 rounded-2xl shadow-lg">
+            <span class="italic font-extrabold text-black ">
+                Reseñas de usuarios
+            </span>
+        </h1>
         <div class="m-8 gap-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 border-black" id="contenedor">
 
         </div>
     </div>
-        <!-- boton whatsapp -->
-        <div class="fixed bottom-4 left-4">
-            <a href="https://api.whatsapp.com/send?phone=3112582493" target="_blank">
-                <button class="bg-green-500 text-white p-4 rounded-full shadow-lg hover:bg-green-700">
-                    <img src="../imagenes/redes_sociales/whatsapp.png" alt="WhatsApp" class="w-12 h-12">
-                </button>
-            </a>
-        </div>
-        <!-- footer -->
-        <footer class="text-white text-center p-6 bg-blue-900 mt-8">
-            <p class="text-lg opacity-80">© 2025 Hotel Refugio del Horizonte. Todos los derechos reservados.</p>
-        </footer>
+    <!-- boton whatsapp -->
+    <div class="fixed bottom-4 left-4">
+        <a href="https://api.whatsapp.com/send?phone=3112582493" target="_blank">
+            <button class="bg-green-500 text-white p-4 rounded-full shadow-lg hover:bg-green-700">
+                <img src="../imagenes/redes_sociales/whatsapp.png" alt="WhatsApp" class="w-12 h-12">
+            </button>
+        </a>
+    </div>
+    <!-- footer -->
+    <footer class="text-white text-center p-6 bg-blue-900 mt-8">
+        <p class="text-lg opacity-80">© 2025 Hotel Refugio del Horizonte. Todos los derechos reservados.</p>
+    </footer>
 </body>
 
 </html>

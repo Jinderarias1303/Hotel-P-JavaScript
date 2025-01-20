@@ -22,7 +22,7 @@ function goToPrevSlide() {
 }
 
 function startAutoSlide() {
-    interval = setInterval(goToNextSlide, 3000); // Cambia cada 3 segundos
+    interval = setInterval(goToNextSlide, 2000); // Cambia cada 2 segundos
 }
 
 function stopAutoSlide() {
@@ -32,19 +32,6 @@ function stopAutoSlide() {
 // Inicia el carrusel automático
 startAutoSlide();
 
-// // Botones manuales
-// prev.addEventListener('click', () => {
-//     stopAutoSlide();
-//     goToPrevSlide();
-//     startAutoSlide();
-// });
-
-// next.addEventListener('click', () => {
-//     stopAutoSlide();
-//     goToNextSlide();
-//     startAutoSlide();
-// });
-
-// Pausar al pasar el ratón sobre el carrusel
 carousel.parentElement.addEventListener('mouseenter', stopAutoSlide);
 carousel.parentElement.addEventListener('mouseleave', startAutoSlide);
+
